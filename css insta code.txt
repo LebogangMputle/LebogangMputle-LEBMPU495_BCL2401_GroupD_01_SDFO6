@@ -1,0 +1,193 @@
+/* the starter code of the template.*/
+:root {
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/*the body arranges the whole page together with the container and header.*/
+body {
+    max-width: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    height: 100vh;
+    background-color: white;
+    color: #262626;
+    padding-bottom: 3rem;
+    margin:0 auto;
+    max-width: 100%;
+  }
+  
+  /*the hline element, adds a line between the profile section and the gallery section.*/
+  .hline { 
+    width:100%; height:0px; background: #fff
+ }
+ 
+ @media only screen and (max-width: 1080px) {
+    
+  }
+ 
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 rem;
+    background: whitesmoke;
+    max-width: 100%;
+  }
+  
+  header {
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px #262626;
+    padding: 20px 0;
+    max-width: 100%;
+  }
+  
+  /**/
+  .profile {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5rem 10;
+    max-width: 100%;
+  }
+  
+
+
+  .profile-image {
+    padding: 15vh;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+
+  
+  .profile-image img {
+    border-radius: 150%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  /*we used the flexbox to align our profile stats,bio and user-settings elements*/
+  .profile-stats,
+.profile-bio,.profile-user-settings {
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    margin-top: 1rem;
+  }
+  
+  .profile-user-name {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /*the btn element, has a blue background and it's cursor effect is a point.*/
+  .btn {
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .profile-stats li{
+    margin-top: 10px;
+    margin-right: 0;
+ }
+  
+  .profile-stats {
+    display: inline-block;
+    justify-content: flex-start;
+    padding: 1%;
+    margin: 2%;
+    cursor: pointer;
+    max-width: 100%;
+  }
+  
+  .profile-stats {
+    margin-right: 1%;
+    font-weight: bold;
+    max-width: 100%;
+  }
+  
+  /*the profile bio is stationed under the profile picture. this was obtained using the margin bottom and left*/
+  .profile-bio {
+    margin-bottom: -400px;
+    margin-left: -800px;
+    font-style: italic;
+    font-size: 180%;
+    max-width: 100%;
+  }
+ 
+  /*the gallery and it's items are used to */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    border:none;
+  }
+ 
+  /*the gallery item uses flexbox to arrange the images in oreder.*/
+  .gallery-item {
+    max-width: 100%;
+    display:flex;
+    flex: 1 0 22rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0px 0 ;
+    padding: 50px;
+    cursor: pointer;
+  }
+/*this is a hovering effect, where the picture hovered over will increase it's padding by 10px.*/
+  .gallery-item:hover{
+    padding: 60px;
+  } 
+  
+  .gallery-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+
+  }
+  
+  .gallery-item-info li {
+    position:relative;
+    margin:0%;
+  }
+  
+  .gallery-item-likes{
+    margin-right: 2.2rem; 
+  }
+  
+  /*the loader uses a key frame to add the loading animation effect.*/
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
